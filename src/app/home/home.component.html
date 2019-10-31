@@ -1,0 +1,8 @@
+<mat-grid-list class="material_grid" cols="3">
+    <mat-grid-tile *ngFor="let tile of tiles" [colspan]="tile.cols" [rowspan]="tile.rows">
+        <mat-card [class.mat-elevation-z4]="!isActive" [class.mat-elevation-z8]="isActive" [routerLink]="tile.routerLink" style.background-image="url({{tile.src}})">
+            <h3>{{tile.title}}</h3>
+            <h4>{{tile.text}}</h4>
+        </mat-card>
+    </mat-grid-tile>
+</mat-grid-list>

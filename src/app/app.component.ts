@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Location } from '@angular/common';
+
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'sabisapp-angular';
+private title: String;
+
+  constructor( private location: Location ) {
+    this.title = 'sabisapp-angular';
+  }
+  goBack() {
+    // window.history.back();
+    this.location.back();
+  }
 }

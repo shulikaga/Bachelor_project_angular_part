@@ -1,0 +1,85 @@
+<h2>Ausbildungsplan</h2>
+
+<div class="grid-container">
+    <div class="grid-item item1">
+        <mat-card>
+            <button mat-menu-item>
+                <mat-icon class="gray_icon">event_note</mat-icon>
+                <span>Überblick</span></button>
+            <button mat-menu-item>
+                <mat-icon class="gray_icon">event</mat-icon>
+                <span>Bevorstehende Kurse</span></button>
+            <button mat-menu-item>
+                <mat-icon class="gray_icon">date_range</mat-icon>
+                <span>Laufende Kurse</span></button>
+            <button mat-menu-item>
+                <mat-icon class="orange_icon">event_busy</mat-icon>
+                <span>Warteliste</span></button>
+            <button mat-menu-item>
+                <mat-icon class="green_icon">event_available</mat-icon>
+                <span>Abgeschlossene Kurse</span></button>
+        </mat-card>
+    </div>
+    <div class="grid-item item2">
+        <h5>Bevorstehende Kurse</h5>
+        <mat-list>
+            <button routerLink="/course" mat-list-item class="raised_list_button md-btn">
+                    <mat-icon class="gray_icon" mat-list-icon>event</mat-icon>
+                    <h4 mat-line><b>Kursname</b></h4>
+                    <p mat-line>Beschreibung</p>
+                </button>
+        </mat-list>
+        <h5>Laufende Kurse</h5>
+        <mat-list>
+            <button routerLink="/course" mat-list-item class="raised_list_button md-btn">
+                    <mat-icon class="gray_icon" mat-list-icon>date_range</mat-icon>
+                    <h4 mat-line><b>Kursname</b></h4>
+                    <p mat-line>Beschreibung</p>
+                </button>
+        </mat-list>
+        <h5>Wartelisten</h5>
+        <mat-list>
+            <button routerLink="/course" mat-list-item class="raised_list_button md-btn">
+                    <mat-icon class="orange_icon"mat-list-icon>event_busy</mat-icon>
+                    <h4 mat-line><b>Kursname</b></h4>
+                    <p mat-line>Beschreibung</p>
+                </button>
+        </mat-list>
+        <h5>Abgeschlossene Kurse</h5>
+        <mat-list>
+            <button routerLink="/course" mat-list-item class="raised_list_button md-btn">
+                    <mat-icon class="green_icon" mat-list-icon>event_available</mat-icon>
+                    <h4 mat-line><b>Kursname</b></h4>
+                    <p mat-line>Beschreibung</p>
+                </button>
+        </mat-list>
+    </div>
+</div>
+
+<mat-tab-group mat-stretch-tabs headerPosition="below">
+    <mat-tab>
+        <ng-template mat-tab-label>
+            <mat-icon class="gray_icon">event_note</mat-icon>
+        </ng-template>
+    </mat-tab>
+    <mat-tab>
+        <ng-template mat-tab-label>
+            <mat-icon class="gray_icon">event</mat-icon>
+        </ng-template>
+    </mat-tab>
+    <mat-tab>
+        <ng-template mat-tab-label>
+            <mat-icon class="gray_icon">date_range</mat-icon>
+        </ng-template>
+    </mat-tab>
+    <mat-tab>
+        <ng-template mat-tab-label>
+            <mat-icon class="orange_icon">event_busy</mat-icon>
+        </ng-template>
+    </mat-tab>
+    <mat-tab>
+        <ng-template mat-tab-label>
+            <mat-icon class="green_icon">event_available</mat-icon>
+        </ng-template>
+    </mat-tab>
+</mat-tab-group>

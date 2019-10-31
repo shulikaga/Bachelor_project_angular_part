@@ -1,0 +1,23 @@
+<div class="signin-content">
+    <mat-card>
+        <mat-card-content>
+            <form [formGroup]="form" (ngSubmit)="onSubmit()">
+                <h2>Partner.Net <br> Login</h2>
+                <p>Use one of these users below.</p>
+                <mat-form-field class="full-width-input" color="accent">
+                    <input matInput placeholder="Username" formControlName="username" name="username" required>
+                    <mat-error *ngIf="isInvalid('username')">
+                        Incorrect username.
+                    </mat-error>
+                </mat-form-field>
+                <mat-form-field class="full-width-input" color="accent">
+                    <input matInput placeholder="Password" formControlName="password" type="password" name="password" required>
+                    <mat-error *ngIf="isInvalid('password')">
+                        Incorrect password.
+                    </mat-error>
+                </mat-form-field>
+                <button mat-raised-button (click)="login()" color="accent">Login</button>
+            </form>
+        </mat-card-content>
+    </mat-card>
+</div>

@@ -1,0 +1,22 @@
+<mat-tab-group mat-stretch-tabs>
+    <mat-tab label="Trainer">
+        <h2>Feedbacks</h2>
+        <mat-list>
+            <button routerLink="/feedbacks/feedback" mat-list-item class="raised_list_button md-btn">
+                    <mat-icon class="gray_icon" mat-list-icon>event</mat-icon>
+                    <h4 mat-line><b>Kursname</b></h4>
+                    <p mat-line>Beschreibung</p>
+                </button>
+        </mat-list>
+    </mat-tab>
+    <mat-tab label="Lehrling">
+        <h2>Bewertungen</h2>
+        <mat-list>
+            <button routerLink="/feedbacks/evaluation" mat-list-item class="raised_list_button md-btn">
+            <mat-icon class="gray_icon" mat-list-icon>event</mat-icon>
+            <h4 mat-line><b>Kursname</b></h4>
+            <p mat-line>Beschreibung</p>
+        </button>
+        </mat-list>
+    </mat-tab>
+</mat-tab-group>
